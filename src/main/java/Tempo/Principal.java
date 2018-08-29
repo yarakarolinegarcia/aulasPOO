@@ -8,17 +8,16 @@ public class Principal {
         int hora = 0;
         int minuto = 0;
         int segundo = 0;
-        System.out.println("Digite a hora para alterar");
-        hora = teclado.nextInt();
-        System.out.println("Digite min para alterar");
-        minuto = teclado.nextInt();
-        System.out.println("Digite segundo para alterar");
-        segundo = teclado.nextInt();
-        time.alteraHora(hora,minuto,segundo);
-
-        time.tempoSeg(hora,minuto,segundo);
-        System.out.print("tempo em segundos: " );
-        time.toString();
+//        System.out.println("Digite a hora para alterar");
+//        hora = teclado.nextInt();
+//        System.out.println("Digite min para alterar");
+//        minuto = teclado.nextInt();
+//        System.out.println("Digite segundo para alterar");
+//        segundo = teclado.nextInt();
+//        time.alteraHora(hora,minuto,segundo);
+//
+       long tempo = time.tempoSeg("11:11:11");
+        System.out.print("tempo em segundos: " + tempo );
     }
 
 }

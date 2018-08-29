@@ -65,10 +65,14 @@ public class Tempo {
         }
 
     }
-    public long tempoSeg(int hora, int minuto, int segundo){
-        long tempoHora = hora * 3600;
-        long tempoMinuto = minuto * 60;
-        long tempoSeg = segundo*60;
+    public long tempoSeg(String tempo){
+        String hora = tempo.substring(0,2);
+        String minuto = tempo.substring(3,5);
+        String segundo = tempo.substring(6,8);
+
+        long tempoHora = Integer.valueOf(hora) * 3600;
+        long tempoMinuto = Integer.valueOf(minuto) * 60;
+        long tempoSeg = Integer.valueOf(segundo);
         return tempoHora + tempoMinuto +tempoSeg;
     }
 
